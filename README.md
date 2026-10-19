@@ -19,14 +19,35 @@ English (full professional) · German (B1) · French (A2)
 
 ## Results
 
-Share left of the starting point, indexed to 100.
+Bar length is the size of the reduction. Click a result for how it was done.
 
-| What | Where | Before → after | |
-|---|---|---|---|
-| Datadog spend | Scalable Capital | `█████░░░░░░░░░░░░░░░` | **−74%** |
-| AWS spend | OEV | `███████████░░░░░░░░░` | **−43%** |
-| Manual release effort | OEV, CI/CD standardisation | `████░░░░░░░░░░░░░░░░` | **−80%** |
-| False-positive classifications | OEV, LLM application, via evals with the customer | `█░░░░░░░░░░░░░░░░░░░` | **−94%** |
+<details>
+<summary><img src="assets/result-datadog.svg" alt="Datadog spend, Scalable Capital: reduced by 74%" width="760"></summary>
+
+Architectural decisions on the Datadog platform that cut cost by 74% while keeping observability intact, plus weekly cost reporting broken down by indexed telemetry, service and AWS account.
+
+</details>
+
+<details>
+<summary><img src="assets/result-aws.svg" alt="AWS spend, OEV: reduced by 43%" width="760"></summary>
+
+Rightsizing, autoscaling and removing idle resources, with no loss of performance or availability.
+
+</details>
+
+<details>
+<summary><img src="assets/result-release.svg" alt="Manual release effort, OEV: reduced by 80%" width="760"></summary>
+
+Multi-stage CI/CD pipelines standardised across GitHub Actions and GitLab CI, alongside the move of 20+ microservices to Azure with zero-downtime deployments.
+
+</details>
+
+<details>
+<summary><img src="assets/result-false-positives.svg" alt="False-positive classifications, OEV: reduced by 94%" width="760"></summary>
+
+Evals built with the customer and internal stakeholders to refine prompts and model behaviour in a production LLM application classifying rehabilitation case documents for 1000+ users.
+
+</details>
 
 Also: about 24 hours a month of manual cost reporting replaced by a scheduled AI workflow on the Datadog MCP server, and 200+ multipage insurance documents processed in 3 months by a TypeScript service.
 
