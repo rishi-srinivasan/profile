@@ -35,6 +35,13 @@ Customer support emails and contact forms at regulated enterprises, such as bank
 **[llm-eval](https://github.com/rishi-srinivasan/llm-eval)**<br>17 Sep 2026
 - A small, reproducible harness for evaluating coding models as autonomous bug-fixing agents. Each model is driven through the OpenAI Codex CLI inside an isolated Docker container, given a real historical bug from pallets/click, and graded on whether its patch fixes the bug without breaking anything else.
 
+<details>
+<summary>How it works</summary>
+
+Choosing a coding model for autonomous bug fixing usually rests on benchmark headlines rather than on how a model behaves on your own codebase, at your own cost and latency. This project is a small, reproducible harness that drives a model through the OpenAI Codex CLI inside an isolated Docker container, hands it a real historical bug from pallets/click, and grades the resulting patch. The six tasks span small to larger fixes. Each one pins Click to the commit before the upstream fix and gives the model only a minimal reproducer. A patch passes only if it keeps the original test suite green and also passes withheld regression tests the model never sees; only the diff under src/ is graded. Every attempt records pass rate, wall-clock time and provider-reported token usage, and time to first token is measured separately. Because the agent loop and sandbox are identical for every model, only the model and provider change. The first run was GLM-5.3 Flash via Ollama Cloud, with 3 repetitions of each task and 16 of 18 attempts passing. Both failures were incomplete fixes that passed the original tests but missed the withheld ones. gpt-5.6-luna is supported for side-by-side comparison, and main is protected so changes land through pull requests.
+
+</details>
+
 **[harness-testing](https://github.com/rishi-srinivasan/harness-testing)**<br>25 Aug 2026
 
 ## Experience
