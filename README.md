@@ -73,9 +73,10 @@ Also: about 24 hours a month of manual cost reporting replaced by a scheduled AI
 ## Projects
 
 **[PII gateway](https://github.com/rishi-srinivasan/gtc-berlin-week-hackathon)** · GTC Berlin Week hackathon · 19 Oct 2026
-Customer Support emails and contact forms at a regulated enterprise like a bank or online investment broker are full of PII (Names, IBANs, tax IDs, Depot Numbers, etc). A small self-hosted language model (SLM), distilled from a larger teacher (frontier LLM) with distil labs, finds the German PIIs based on regulatory requirements of BaFin, GDPR, and DORA. SLM swaps it for placeholders like `[IBAN_1]` and only the masked text reaches the frontier LLM, and the reply is rehydrated. Leak rate is measured against gold labels, every call is traced in Langfuse, and leak-free teacher traces become new training rows for the next student.
+- Customer support emails and contact forms at regulated enterprises, such as banks and online investment brokers, are full of PII (names, IBANs, tax IDs, depot numbers and more). A small self-hosted language model (SLM), distilled with distil labs from a larger teacher model (gpt-oss-120b), finds the PII in German text. Code then swaps each value for a placeholder such as [IBAN_1], only the masked text reaches the frontier LLM, and the reply is rehydrated with the original values. Leak rate is measured against gold labels, every call is traced in Langfuse, and leak-free teacher traces become new training rows for the next student.
 
 **[llm-eval](https://github.com/rishi-srinivasan/llm-eval)** · 17 Sep 2026
+- A small, reproducible harness for evaluating coding models as autonomous bug-fixing agents. Each model is driven through the OpenAI Codex CLI inside an isolated Docker container, given a real historical bug from pallets/click, and graded on whether its patch fixes the bug without breaking anything else.
 
 **[harness-testing](https://github.com/rishi-srinivasan/harness-testing)** · 25 Aug 2026
 
