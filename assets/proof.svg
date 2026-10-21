@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="900" role="img" aria-label="Results: Datadog spend reduced 74%, false positives reduced 94%, AWS spend reduced 43%, release effort reduced 80%.">
+  <style>text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}</style>
+  <rect x="1" y="1" width="212" height="148" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="19" y="56" font-size="40" font-weight="700" fill="#58a6ff">74%</text>
+  <text x="19" y="84" font-size="15" font-weight="600" fill="#e6edf3">Datadog spend reduced</text>
+  <text x="19" y="103" font-size="12" fill="#9198a1">Scalable Capital</text>
+  <rect x="19" y="120" width="176" height="8" rx="4" fill="#30363d"/><rect x="19" y="120" width="130" height="8" rx="4" fill="#58a6ff"/>
+  <rect x="230" y="1" width="212" height="148" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="248" y="56" font-size="40" font-weight="700" fill="#58a6ff">94%</text>
+  <text x="248" y="84" font-size="15" font-weight="600" fill="#e6edf3">False positives reduced</text>
+  <text x="248" y="103" font-size="12" fill="#9198a1">Production LLM app, OEV</text>
+  <rect x="248" y="120" width="176" height="8" rx="4" fill="#30363d"/><rect x="248" y="120" width="165" height="8" rx="4" fill="#58a6ff"/>
+  <rect x="459" y="1" width="212" height="148" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="477" y="56" font-size="40" font-weight="700" fill="#58a6ff">43%</text>
+  <text x="477" y="84" font-size="15" font-weight="600" fill="#e6edf3">AWS spend reduced</text>
+  <text x="477" y="103" font-size="12" fill="#9198a1">OEV</text>
+  <rect x="477" y="120" width="176" height="8" rx="4" fill="#30363d"/><rect x="477" y="120" width="76" height="8" rx="4" fill="#58a6ff"/>
+  <rect x="688" y="1" width="212" height="148" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="706" y="56" font-size="40" font-weight="700" fill="#58a6ff">80%</text>
+  <text x="706" y="84" font-size="15" font-weight="600" fill="#e6edf3">Release effort reduced</text>
+  <text x="706" y="103" font-size="12" fill="#9198a1">20+ services on Azure, OEV</text>
+  <rect x="706" y="120" width="176" height="8" rx="4" fill="#30363d"/><rect x="706" y="120" width="141" height="8" rx="4" fill="#58a6ff"/>
+</svg>

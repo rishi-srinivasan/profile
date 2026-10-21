@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Terminal window: Rishi Srinivasan, Cloud Site Reliability Engineer. Focus: reliability, observability, LLM platforms, FinOps." width="900">
+  <img src="assets/banner.svg" alt="Terminal window: Rishi Srinivasan, Cloud Site Reliability Engineer at Scalable Capital, Berlin. Reliability and cost at platform level; LLM systems in production, with evals." width="900">
 </p>
 
 <p align="center">
@@ -9,82 +9,63 @@
   <a href="https://medium.com/@rishi.srinivasan95"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/medium/ffffff"><img src="https://cdn.simpleicons.org/medium/000000" width="18" height="18" align="absmiddle" alt=""></picture> Writing</a>
 </p>
 
+<p align="center">
+  <img src="assets/proof.svg" alt="Datadog spend reduced 74%. False positives reduced 94%. AWS spend reduced 43%. Release effort reduced 80%." width="900">
+</p>
+
 ## About
 
-As a Site Reliability Engineer, I keep platforms reliable, and ship the LLM systems that run on them. Eight years across machine learning, backend and cloud, in regulated environments: online banking, insurance, healthcare.
-
-At **Scalable Capital** in Berlin I own the Datadog platform and the company's LLM gateway. Before that I owned a production LLM application for 1000+ users at **OEV** and delivered cloud and ML work for Bank of Montreal, Equinor, Transgrid and JERA at **Tata Consultancy Services**.
-
-English (full professional) · German (B1) · French (A2)
-
-## Results
-
-Bar length is the size of the reduction. Click a result for how it was done.
-
-<details>
-<summary><img src="assets/result-datadog.svg" alt="Datadog spend, Scalable Capital: reduced by 74%" width="760"></summary>
-
-Architectural decisions on the Datadog platform that cut cost by 74% while keeping observability intact, plus weekly cost reporting broken down by indexed telemetry, service and AWS account.
-
-</details>
-
-<details>
-<summary><img src="assets/result-aws.svg" alt="AWS spend, OEV: reduced by 43%" width="760"></summary>
-
-Rightsizing, autoscaling and removing idle resources, with no loss of performance or availability.
-
-</details>
-
-<details>
-<summary><img src="assets/result-release.svg" alt="Manual release effort, OEV: reduced by 80%" width="760"></summary>
-
-Multi-stage CI/CD pipelines standardised across GitHub Actions and GitLab CI, alongside the move of 20+ microservices to Azure with zero-downtime deployments.
-
-</details>
-
-<details>
-<summary><img src="assets/result-false-positives.svg" alt="False-positive classifications, OEV: reduced by 94%" width="760"></summary>
-
-Evals built with the customer and internal stakeholders to refine prompts and model behaviour in a production LLM application classifying rehabilitation case documents for 1000+ users.
-
-</details>
-
-Also: about 24 hours a month of manual cost reporting replaced by a scheduled AI workflow on the Datadog MCP server, and 200+ multipage insurance documents processed in 3 months by a TypeScript service.
-
-## Experience
-
-<img src="https://www.google.com/s2/favicons?domain=scalable.capital&sz=64" width="20" height="20" align="absmiddle" alt=""> **Cloud Site Reliability Engineer II · [Scalable Capital](https://www.scalable.capital)** · Jul 2026 – now · Berlin
-- Led a 3-month proof of concept of Dash0 as a Datadog replacement: set the success criteria, integrated 5 core services, ran governance and permissions, onboarded 15+ engineers in 3 workshops, and turned developer feedback into feature requests with Dash0's product teams.
-- Automated Datadog cost reporting with scheduled tasks on the Datadog MCP server, publishing weekly and monthly slides for the VP Engineering and CTO.
-- Operate Bifrost, the LLM gateway: cost, latency and token tracking across teams, MCP connectors, budgets, rate limits and alerts.
-- Own the Datadog platform; cut its cost by 74% while keeping observability intact.
-
-<img src="assets/logo-oev.svg" width="20" height="20" align="absmiddle" alt=""> **DevOps Engineer · [OEV](https://www.oev-online.de) (Sparkasse Versicherung Group)** · Nov 2022 – Jun 2026 · Berlin
-- Owned a production LLM application (Python, LangChain, LangGraph) end to end for a healthcare customer, classifying rehabilitation case documents for 1000+ users. Built evals with the customer and cut false positives by 94%.
-- Designed and ran its cloud infrastructure: containers, CI/CD, guardrails, observability, cost controls.
-- Built a TypeScript document service that pre-fills policy forms from insurance certificates, and a market-monitoring pipeline that summarises competitor pricing changes with Slack alerts.
-- Migrated 20+ microservices from on-premises to Azure (AKS, ACI, Terraform) with zero downtime; standardised CI/CD in GitHub Actions and GitLab CI.
-- Started as Associate DevOps Engineer and cut AWS costs by 43%.
-
-**Data Scientist, then Associate Systems Engineer · Tata Consultancy Services** · Sep 2017 – Sep 2021 · Chennai
-- Shipped an end-to-end ML pipeline predicting coal properties for JERA, working directly with their engineers.
-- Delivered backend and cloud work for Bank of Montreal, Equinor and Transgrid, including a Windows banking monolith moved to cloud-native C# microservices on AWS CDK.
+- Eight years across machine learning, backend and cloud, in regulated environments: online banking, insurance, healthcare.
+- At **Scalable Capital**: own the Datadog platform and the company's LLM gateway.
+- Before that at **OEV**: owned a production LLM application for 1000+ users.
+- Languages: English (full professional) · German (B1) · French (A2)
 
 ## Projects
 
-**[PII gateway](https://github.com/rishi-srinivasan/gtc-berlin-week-hackathon)** · GTC Berlin Week hackathon · 19 Oct 2026
-- Customer support emails and contact forms at regulated enterprises, such as banks and online investment brokers, are full of PII (names, IBANs, tax IDs, depot numbers and more). A small self-hosted language model (SLM), distilled with distil labs from a larger teacher model (gpt-oss-120b), finds the PII in German text. Code then swaps each value for a placeholder such as [IBAN_1], only the masked text reaches the frontier LLM, and the reply is rehydrated with the original values. Leak rate is measured against gold labels, every call is traced in Langfuse, and leak-free teacher traces become new training rows for the next student.
+**[PII gateway](https://github.com/rishi-srinivasan/gtc-berlin-week-hackathon)**<br>GTC Berlin Week hackathon · 19 Oct 2026
+- A distilled, self-hosted language model masks PII in German bank and broker support emails, so only masked text reaches a frontier LLM. Leak rate is measured against gold labels.
 
-**[llm-eval](https://github.com/rishi-srinivasan/llm-eval)** · 17 Sep 2026
+<details>
+<summary>How it works</summary>
+
+Customer support emails and contact forms at regulated enterprises, such as banks and online investment brokers, are full of PII (names, IBANs, tax IDs, depot numbers and more). A small self-hosted language model (SLM), distilled with distil labs from a larger teacher model (gpt-oss-120b), finds the PII in German text. Code then swaps each value for a placeholder such as [IBAN_1], only the masked text reaches the frontier LLM, and the reply is rehydrated with the original values. Leak rate is measured against gold labels, every call is traced in Langfuse, and leak-free teacher traces become new training rows for the next student.
+
+</details>
+
+**[llm-eval](https://github.com/rishi-srinivasan/llm-eval)**<br>17 Sep 2026
 - A small, reproducible harness for evaluating coding models as autonomous bug-fixing agents. Each model is driven through the OpenAI Codex CLI inside an isolated Docker container, given a real historical bug from pallets/click, and graded on whether its patch fixes the bug without breaking anything else.
 
-**[harness-testing](https://github.com/rishi-srinivasan/harness-testing)** · 25 Aug 2026
+**[harness-testing](https://github.com/rishi-srinivasan/harness-testing)**<br>25 Aug 2026
+
+## Experience
+
+<img src="https://www.google.com/s2/favicons?domain=scalable.capital&sz=64" width="20" height="20" align="absmiddle" alt=""> **[Scalable Capital](https://www.scalable.capital)**<br>Cloud Site Reliability Engineer II · Jul 2026 – now · Berlin
+- Own the Datadog platform; cut its cost by 74% while keeping observability intact.
+- Automated Datadog cost reporting on the Datadog MCP server, replacing about 24 hours a month of manual work; weekly and monthly slides go to the VP Engineering and CTO.
+- Operate Bifrost, the LLM gateway: cost, latency and token tracking, MCP connectors, budgets, rate limits and alerts.
+- Led a 3-month Dash0 proof of concept as a Datadog replacement: success criteria, 5 core services integrated, governance and permissions, 15+ engineers onboarded in 3 workshops.
+
+<img src="assets/logo-oev.svg" width="20" height="20" align="absmiddle" alt=""> **[OEV](https://www.oev-online.de)**<br>DevOps Engineer, Sparkasse Versicherung Group · Nov 2022 – Jun 2026 · Berlin
+- Owned a production LLM application (Python, LangChain, LangGraph) for a healthcare customer, classifying rehabilitation case documents for 1000+ users.
+- Built evals with the customer and cut false positives by 94%.
+- Designed and ran its cloud infrastructure: containers, CI/CD, guardrails, observability, cost controls.
+- Migrated 20+ microservices from on-premises to Azure (AKS, ACI, Terraform) with zero downtime; standardised CI/CD in GitHub Actions and GitLab CI.
+- Built a TypeScript document service that pre-fills policy forms from insurance certificates; 200+ multipage documents processed in 3 months.
+- Built a market-monitoring pipeline that summarises competitor pricing changes with Slack alerts.
+- Started as Associate DevOps Engineer and cut AWS costs by 43%.
+
+<img src="https://www.google.com/s2/favicons?domain=tcs.com&sz=64" width="20" height="20" align="absmiddle" alt=""> **[Tata Consultancy Services](https://www.tcs.com)**<br>Data Scientist, then Associate Systems Engineer · Sep 2017 – Sep 2021 · Chennai
+- Shipped an end-to-end ML pipeline predicting coal properties for JERA, working directly with their engineers.
+- Delivered backend and cloud work for Bank of Montreal, Equinor and Transgrid, including a Windows banking monolith moved to cloud-native C# microservices on AWS CDK.
 
 ## Writing and teaching
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/medium/ffffff"><img src="https://cdn.simpleicons.org/medium/000000" width="18" height="18" align="absmiddle" alt=""></picture> 29 Nov 2025 · [Building Enterprise-Grade Cloud Infrastructure: A Deep Dive into OOP and Reusable Components with Pulumi](https://medium.com/@rishi.srinivasan95/building-enterprise-grade-cloud-infrastructure-a-deep-dive-into-oop-and-reusable-components-with-e3441b89168e)
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/medium/ffffff"><img src="https://cdn.simpleicons.org/medium/000000" width="20" height="20" align="absmiddle" alt=""></picture> **[Building Enterprise-Grade Cloud Infrastructure](https://medium.com/@rishi.srinivasan95/building-enterprise-grade-cloud-infrastructure-a-deep-dive-into-oop-and-reusable-components-with-e3441b89168e)**<br>Medium · 29 Nov 2025
+- A deep dive into OOP and reusable components with Pulumi.
 
-<img src="https://www.google.com/s2/favicons?domain=htw-berlin.de&sz=64" width="18" height="18" align="absmiddle" alt=""> Guest lecturer for the Cloud Computing module of the M.Sc. Professional IT Business and Digitalisation at HTW Berlin, Summer 2027; administrator of the programme's AWS accounts.
+<img src="https://www.google.com/s2/favicons?domain=htw-berlin.de&sz=64" width="20" height="20" align="absmiddle" alt=""> **HTW Berlin**<br>Guest lecturer · Summer 2027
+- Cloud Computing module of the M.Sc. Professional IT Business and Digitalisation.
+- Administrator of the programme's AWS accounts.
 
 ## Stack
 
@@ -99,7 +80,8 @@ Also: about 24 hours a month of manual cost reporting replaced by a scheduled AI
 
 ## Education
 
-<img src="https://www.google.com/s2/favicons?domain=htw-berlin.de&sz=64" width="18" height="18" align="absmiddle" alt=""> M.Sc. Professional IT Business and Digitalisation, HTW Berlin (GPA 1.58) · B.Tech Mechanical Engineering, SASTRA University
+- <img src="https://www.google.com/s2/favicons?domain=htw-berlin.de&sz=64" width="18" height="18" align="absmiddle" alt=""> M.Sc. Professional IT Business and Digitalisation, HTW Berlin (GPA 1.58)
+- B.Tech Mechanical Engineering, SASTRA University
 
 ## Contact
 
