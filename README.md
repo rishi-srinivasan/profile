@@ -11,7 +11,7 @@
 
 ## About
 
-I keep platforms reliable, and ship the LLM systems that run on them. Eight years across machine learning, backend and cloud, in regulated environments: online banking, insurance, healthcare.
+As a Site Reliability Engineer, I keep platforms reliable, and ship the LLM systems that run on them. Eight years across machine learning, backend and cloud, in regulated environments: online banking, insurance, healthcare.
 
 At **Scalable Capital** in Berlin I own the Datadog platform and the company's LLM gateway. Before that I owned a production LLM application for 1000+ users at **OEV** and delivered cloud and ML work for Bank of Montreal, Equinor, Transgrid and JERA at **Tata Consultancy Services**.
 
@@ -74,6 +74,10 @@ Also: about 24 hours a month of manual cost reporting replaced by a scheduled AI
 
 **[PII gateway](https://github.com/rishi-srinivasan/gtc-berlin-week-hackathon)** · GTC Berlin Week hackathon · 19 Oct 2026
 Customer Support emails and contact forms at a regulated enterprise like a bank or online investment broker are full of PII (Names, IBANs, tax IDs, Depot Numbers, etc). A small self-hosted language model (SLM), distilled from a larger teacher (frontier LLM) with distil labs, finds the German PIIs based on regulatory requirements of BaFin, GDPR, and DORA. SLM swaps it for placeholders like `[IBAN_1]` and only the masked text reaches the frontier LLM, and the reply is rehydrated. Leak rate is measured against gold labels, every call is traced in Langfuse, and leak-free teacher traces become new training rows for the next student.
+
+**[llm-eval](https://github.com/rishi-srinivasan/llm-eval)** · 17 Sep 2026
+
+**[harness-testing](https://github.com/rishi-srinivasan/harness-testing)** · 25 Aug 2026
 
 ## Writing and teaching
 
