@@ -1,14 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 56" width="760" role="img" aria-label="Manual release effort, OEV · CI/CD: reduced by 80%">
-  <style>
-    text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
-    .l{fill:#1f2328}.s{fill:#59636e}.tr{fill:#d1d9e0}.b{fill:#0969da}.v{fill:#0969da}
-    @media (prefers-color-scheme:dark){.l{fill:#e6edf3}.s{fill:#9198a1}.tr{fill:#30363d}.b{fill:#58a6ff}.v{fill:#58a6ff}}
-  </style>
-  <text x="0" y="24" font-size="15" font-weight="600" class="l">Manual release effort</text>
-  <text x="0" y="43" font-size="12" class="s">OEV · CI/CD</text>
-  <rect x="250" y="16" width="400" height="24" rx="6" class="tr"/>
-  <rect x="250" y="16" width="320" height="24" rx="6" class="b">
-    <animate attributeName="width" values="0;320;320;320" keyTimes="0;0.15;0.9;1" calcMode="spline" keySplines="0.16 1 0.3 1;0 0 1 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 64" width="760" role="img" aria-label="Manual release effort, OEV · CI/CD: reduced by 80%">
+  <style>text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}</style>
+  <rect x="1" y="1" width="758" height="62" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="20" y="28" font-size="15" font-weight="600" fill="#e6edf3">Manual release effort</text>
+  <text x="20" y="47" font-size="12" fill="#9198a1">OEV · CI/CD</text>
+  <rect x="270" y="20" width="360" height="24" rx="6" fill="#30363d"/>
+  <rect x="270" y="20" width="288" height="24" rx="6" fill="#58a6ff">
+    <animate attributeName="width" values="0;288;288;288" keyTimes="0;0.15;0.9;1" calcMode="spline" keySplines="0.16 1 0.3 1;0 0 1 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
   </rect>
-  <text x="750" y="35" text-anchor="end" font-size="20" font-weight="700" class="v">−80%</text>
+  <text x="740" y="40" text-anchor="end" font-size="20" font-weight="700" fill="#58a6ff">−80%</text>
 </svg>
