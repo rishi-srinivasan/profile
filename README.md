@@ -22,6 +22,16 @@
 
 ## Projects
 
+**[BOTL: Batch on the Label](https://botl.site)**<br>OpenAI DevDay Hackathon, Berlin · 24 Oct 2026 · 3rd place, GTM/Founder category
+- Is the product in your hand safe to use? Snap the product and its batch number, and BOTL alerts you the moment the German food authority (BVL) issues an official recall for that batch. Mobile first, for baby products, food, skincare and household items. [Demo video](https://photos.icloud.com/shared/album/0fdb5PcTioO9aIQ27Jz9oxjEA)
+
+<details>
+<summary>How it works</summary>
+
+BOTL tells you whether the product in your hand is safe for consumption or not. Take a picture of the product and its batch number; the app, using the ResponseAPI and DecisionAPI, stores it and alerts you when the German food authorities (BVL) publish an official recall for any batch of that product. The mobile-first app covers baby products, food, skincare and other household items. Built for a safe and healthy future.
+
+</details>
+
 **[PII gateway](https://github.com/rishi-srinivasan/gtc-berlin-week-hackathon)**<br>GTC Berlin Week hackathon · 19 Oct 2026
 - A distilled, self-hosted language model masks PII in German bank and broker support emails, so only masked text reaches a frontier LLM. Leak rate is measured against gold labels.
 
